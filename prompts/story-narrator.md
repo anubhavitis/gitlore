@@ -1,4 +1,4 @@
-Create an engaging narrative story from this GitHub repository data:
+Create a structured, feature-driven story from this GitHub repository data:
 
 Repository: {repoName}
 Description: {description}
@@ -10,12 +10,56 @@ Contributors: {contributors}
 
 Recent Commits: {commits}
 
-Create a story with:
-- Beginning: Project origin, first commit, initial vision
-- Middle: Evolution, key features, challenges, team collaboration
-- End: Current state and impact
+## Required Structure
 
-IMPORTANT: When mentioning contributors by name, use markdown links to their GitHub profiles.
-Format: [username](https://github.com/username)
+Organize the output using the following sections with markdown headings:
 
-Make it engaging and human-focused, with technical details woven naturally into the narrative.
+### ## Project Overview
+- Brief description
+- Key stats (stars, language, creation date)
+- Main purpose/goal
+
+### ## The Beginning
+- #### First Commit
+  - Initial vision and setup
+  - Who started it ([username](https://github.com/username))
+- #### Early Development
+  - Initial features built
+  - Early contributors
+
+### ## Major Features & Milestones
+Identify and document major features/functionality from the commits. For each feature:
+- #### Feature: [Feature Name]
+  - What it does
+  - When it was added (reference commit dates)
+  - Key contributors who built it
+  - Technical approach if notable
+
+### ## Key Contributors
+For each major contributor:
+- #### [username](https://github.com/username)
+  - Number of contributions
+  - Primary areas of work
+  - Notable features they built
+
+### ## Technical Evolution
+- #### Technology Stack
+  - Languages/frameworks used
+  - Any major tech changes over time
+- #### Architecture
+  - Major refactors or architectural changes
+  - Performance improvements
+
+### ## Current State
+- Recent activity and updates
+- Impact (stars, usage, community)
+- Future direction (if evident from commits)
+
+## Formatting Rules
+- Use bullet points for lists
+- Use headings and subheadings (##, ###)
+- Link all contributor names: [username](https://github.com/username)
+- Keep paragraphs concise and focused
+- Organize by features, not chronologically
+
+Make it informative and well-structured, focusing on features and technical evolution.

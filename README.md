@@ -1,4 +1,4 @@
-# Gitory - Git Story Narrator
+# GitLore - Git Story Narrator
 
 Transform GitHub repositories into engaging narratives.
 
@@ -17,8 +17,9 @@ bun dev
 
 3. Open http://localhost:3000 and paste a GitHub URL
 
-## POC Features
+## Features
 
 - Fetches GitHub repo data (commits, contributors)
-- Streams AI-generated story
-- Minimal UI focused on core functionality
+- Streams AI-generated story with feature-driven structure
+- Clean, minimal UI with wavy background
+- Separate search and story pages
