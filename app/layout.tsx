@@ -11,8 +11,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GitLore - Git Story Narrator",
-  description: "Transform GitHub repositories into engaging narratives",
+  title: {
+    default: "GitLore - Git Story Narrator",
+    template: "%s | GitLore",
+  },
+  description: "Transform GitHub repositories into engaging narratives. Discover the story behind any open source project.",
+  keywords: ["github", "git", "story", "narrative", "repository", "open source", "commits", "contributors"],
+  authors: [{ name: "GitLore" }],
+  creator: "GitLore",
+  metadataBase: new URL("https://gitlore.vercel.app"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://gitlore.vercel.app",
+    title: "GitLore - Git Story Narrator",
+    description: "Transform GitHub repositories into engaging narratives",
+    siteName: "GitLore",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GitLore - Git Story Narrator",
+    description: "Transform GitHub repositories into engaging narratives",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

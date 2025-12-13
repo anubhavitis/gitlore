@@ -1,0 +1,16 @@
+{
+  "name": "GitLore - Git Story Narrator",
+  "short_name": "GitLore",
+  "description": "Transform GitHub repositories into engaging narratives",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
