@@ -32,7 +32,7 @@ export async function fetchRepoData(url: string): Promise<GitHubRepo> {
     contributors: contributors.data.map(c => ({
       login: c.login || '',
       contributions: c.contributions,
-      avatar: c.avatar_url
+      avatar: c.avatar_url || ''
     })),
     commits: commits.data.map(c => ({
       sha: c.sha,

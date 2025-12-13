@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useCompletion } from "ai/react";
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -12,7 +12,7 @@ import { Navbar } from "@/components/navbar";
 import { LoadingState } from "@/components/loading-state";
 import type { GitHubRepo } from "@/types";
 
-export default function StoryPage() {
+function StoryPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [repoData, setRepoData] = useState<GitHubRepo | null>(null);
@@ -106,5 +106,19 @@ export default function StoryPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function StoryPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen px-6 py-12">
+        <div className="max-w-5xl mx-auto">
+          <LoadingState message="Loading..." />
+        </div>
+      </main>
+    }>
+      <StoryPageContent />
+    </Suspense>
   );
 }
